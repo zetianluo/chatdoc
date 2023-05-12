@@ -72,11 +72,11 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 Your `.env` file should look like this:
 
-    ```sh
-    OPENAI_API_KEY="$MY_API_KEY"
-    COLLECTION_NAME=
-    CHROMA_URL=
-    ```
+```
+OPENAI_API_KEY="$MY_API_KEY"
+COLLECTION_NAME=
+CHROMA_URL=
+```
 
 - Visit [OpenAI](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
 - Select a name for the collection in Chroma where you wish to store your embeddings. This collection will be utilized for future queries and retrieval purposes.
@@ -89,9 +89,9 @@ Your `.env` file should look like this:
 
 After confirming that the embeddings and content have been effectively added to your Chroma, you can run the app using the following command
 
-    ```sh
-    npm run dev
-    ```
+```
+npm run dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
