@@ -72,7 +72,7 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 Your `.env` file should look like this:
 
-    ```
+    ```sh
     OPENAI_API_KEY="$MY_API_KEY"
     COLLECTION_NAME=
     CHROMA_URL=
@@ -89,7 +89,7 @@ Your `.env` file should look like this:
 
 After confirming that the embeddings and content have been effectively added to your Chroma, you can run the app using the following command
 
-    ```
+    ```sh
     npm run dev
     ```
 
