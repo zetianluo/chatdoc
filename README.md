@@ -63,7 +63,7 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
     npm install
     ```
 
-After installation, you should now see a `node_modules` folder.
+    After installation, you should now see a `node_modules` folder.
 
 3. Set up your `.env` file
 
@@ -73,7 +73,6 @@ Your `.env` file should look like this:
 OPENAI_API_KEY="$MY_API_KEY"
 COLLECTION_NAME=
 CHROMA_URL=
-
 ```
 
 - Visit [openai](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
