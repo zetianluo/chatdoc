@@ -7,7 +7,7 @@ function Chatbox() {
   const [messageState, setMessageState] = useState({
     messages: [
       {
-        text: 'Hi, you can ask me any thing about the doc.',
+        text: 'Greetings! Feel free to inquire about any aspect of the document. I am here to assist you.',
         isUser: false,
       },
     ],
