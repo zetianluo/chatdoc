@@ -1,0 +1,39 @@
+{
+  "name": "chatdoc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "embed": "tsx -r dotenv/config script/embed-txt.tsx"
+  },
+  "dependencies": {
+    "@types/react-dom": "18.2.4",
+    "chromadb": "^1.4.1",
+    "cohere-ai": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "fs": "^0.0.1-security",
+    "langchain": "^0.0.54",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tsx": "^3.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.2",
+    "@types/react": "18.2.6",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.0.4"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  }
+}
