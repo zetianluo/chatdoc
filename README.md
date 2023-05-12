@@ -1,5 +1,5 @@
 # ChatDoc Proejct
-The ChatDoc is an intelligent conversational agent designed to interact with users and provide relevant information or assistance. Powered by industry-leading technologies such as OpenAI open source, large language models (LLMs), and vectorDB (Chroma), the ChatDoc harnesses the power of advanced natural language processing and machine learning algorithms.  It is capable of answering questions, providing recommendations, guiding users through processes, and engaging in meaningful conversations. With its ability to comprehend and generate human-like responses, the ChatDoc aims to enhance user experience, streamline customer support, and deliver efficient and personalized services.
+The ChatDoc is an intelligent conversational agent designed to interact with users and provide relevant information or assistance. Powered by technologies such as OpenAI open source, [Langchain and vectorDB (Chroma)](https://blog.langchain.dev/langchain-chroma/), the ChatDoc harnesses the power of advanced natural language processing and machine learning algorithms.  It is capable of answering questions, providing recommendations, guiding users through processes, and engaging in meaningful conversations. With its ability to comprehend and generate human-like responses, the ChatDoc aims to enhance user experience, streamline customer support, and deliver efficient and personalized services.
 
 ![Example screenshot](./images/mobile_frontend.png)
 
@@ -30,18 +30,19 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 If your installation was successful, you should be able to run the following command:
 - Node.js
-    ```sh
+    ```
     $ node --version
     v18.16.0
     ```
 - NPM
-   ```sh
+   ```
    $ npm --version
    9.5.1
    ```
 
 If you need to update `npm`, just run the following commands.
-    ```sh
+
+    ```
     $ npm update -g next
     ```
 
@@ -55,7 +56,7 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 1. Clone the repo or download the ZIP:
 
-    ```sh
+    ```
     git clone https://github.com/zetianluo/chatdoc.git
     ```
 
@@ -71,22 +72,28 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 Your `.env` file should look like this:
 
-```
-OPENAI_API_KEY="$MY_API_KEY"
-COLLECTION_NAME=
-CHROMA_URL=
-```
+    ```
+    OPENAI_API_KEY="$MY_API_KEY"
+    COLLECTION_NAME=
+    CHROMA_URL=
+    ```
 
-- Visit [openai](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
+- Visit [OpenAI](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
 - Select a name for the collection in Chroma where you wish to store your embeddings. This collection will be utilized for future queries and retrieval purposes.
 
-4. In `api/chat.tsx` chain change the QA_PROMPT for your own usecase. 
+4. In `api/chat.tsx` chain change the `QA_PROMPT` for your own usecase. 
 
 5. You can edit or replace the text file `...\public\static\example.txt` to import your own text file to the Chroma.
 
 ## Getting Started
 
-After confirming that the embeddings and content have been effectively added to your Chroma, you can run the app `npm run dev` and open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After confirming that the embeddings and content have been effectively added to your Chroma, you can run the app using the following command
+
+    ```
+    npm run dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
