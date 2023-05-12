@@ -1,6 +1,8 @@
 # ChatDoc Proejct
 The ChatDoc is an intelligent conversational agent designed to interact with users and provide relevant information or assistance. Powered by industry-leading technologies such as OpenAI open source, large language models (LLMs), and vectorDB (Chroma), the ChatDoc harnesses the power of advanced natural language processing and machine learning algorithms.  It is capable of answering questions, providing recommendations, guiding users through processes, and engaging in meaningful conversations. With its ability to comprehend and generate human-like responses, the ChatDoc aims to enhance user experience, streamline customer support, and deliver efficient and personalized services.
 
+![Example screenshot](./images/mobile_frontend.png)
+
 ---
 ## Requirements
 
@@ -49,7 +51,7 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 ---
 
-## Running locally in development mode
+### Running locally in development mode
 
 1. Clone the repo or download the ZIP:
 
