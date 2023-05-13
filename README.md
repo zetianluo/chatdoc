@@ -83,7 +83,7 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
 4. In `api/chat.tsx` chain change the prompt in `QA_PROMPT` for your own usecase. 
 
-5. You can edit or replace the text file `...\public\static\example.txt` to import your own text file to the Chroma.
+5. Edit or replace the text file `...\public\static\example.txt` to import your own text file to the Chroma.
 
 ## Getting Started
 

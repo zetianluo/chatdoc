@@ -22,7 +22,7 @@ body {
   left: 0;
   right: 0;
   height: 16rem;
-  /* 你可以调整高度来适应你的需求 */
+  /* change to fit requirement */
   display: flex;
   justify-content: center;
   align-items: center;
