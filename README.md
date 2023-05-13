@@ -81,13 +81,19 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
     - Visit [OpenAI](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
     - Select a name for the collection in Chroma where you wish to store your embeddings. This collection will be utilized for future queries and retrieval purposes.
 
-4. In `api/chat.tsx` chain change the `QA_PROMPT` for your own usecase. 
+4. In `api/chat.tsx` chain change the prompt in `QA_PROMPT` for your own usecase. 
 
-5. You can edit or replace the text file `...\public\static\example.txt` to import your own text file to the Chroma.
+5. Edit or replace the text file `...\public\static\example.txt` to import your own text file to the Chroma.
 
 ## Getting Started
 
-After confirming that the embeddings and content have been effectively added to your Chroma, you can run the app using the following command
+- Run the following command to add embedings and content to your Chroma:
+
+```
+npm run embed
+```
+
+- Run the app using the following command:
 
 ```
 npm run dev
