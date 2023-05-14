@@ -68,6 +68,13 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
     After installation, you should now see a `node_modules` folder.
 
+    If you encounter version errors later, please use the following command to update the packages:
+
+    ```
+    npm install -S langchain@latest
+    npm install -S chromadb@latest
+    ```
+
 3. Set up your `.env` file
 
     Your `.env` file should look like this:
@@ -80,6 +87,27 @@ Please ensure that your Node version is at least 18 or newer. Above are the exac
 
     - Visit [OpenAI](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to get your own API keys and put it into your `.env` file.
     - Select a name for the collection in Chroma where you wish to store your embeddings. This collection will be utilized for future queries and retrieval purposes.
+    - Two ways to set up the `CHROMA_URL`:
+        1. Run the following command to pull the Chroma images from Dockerhub and host it at your local port 8000:
+
+        ```
+        docker run -p 8000:8000 ghcr.io/chroma-core/chroma:0.3.21
+        ```
+
+        It may take a few minutes to pull the full image.
+
+        Then you can use the following `CHROMA_URL`
+        ```
+        CHROMA_URL=http://localhost:8000
+        ```
+
+        Or:
+
+        2. Use the following Chromadb server public address:
+
+        ```
+        CHROMA_URL=http://h4.noway.top:13579
+        ```
 
 4. In `api/chat.tsx` chain change the prompt in `QA_PROMPT` for your own usecase. 
 
